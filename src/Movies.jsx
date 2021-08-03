@@ -15,7 +15,7 @@ export default class Movies extends Component {
 
 	render() {
 		const movies = this.state.movies;
-		const count = movies.length;
+		const { length: count } = movies;
 		if (count === 0) return <p>There are no movies in the database! Fail.</p>;
 
 		return (
